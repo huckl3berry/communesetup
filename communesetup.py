@@ -12,7 +12,9 @@ class EnvironmentSetup:
             "git clone https://github.com/commune-ai/commune.git",
             "cd commune",
             "pip install -e ./",
-            "sudo apt install docker.io -y",  # Install Docker
+            "curl -SL https://github.com/docker/compose/releases/download/v2.20.3/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose",
+            "sudo chmod +x /usr/local/bin/docker-compose",
+            "sudo apt install -y docker.io",  # Install Docker
             "sudo systemctl start docker",    # Start Docker service
             "sudo systemctl enable docker",   # Enable Docker service on boot
             "sudo apt install sshpass -y",    # Install sshpass
