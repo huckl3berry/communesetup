@@ -29,7 +29,7 @@ class EnvironmentSetup:
             "sudo systemctl enable docker",   # Enable Docker service on boot
             "sudo apt install -y sshpass",    # Install sshpass
             "sudo apt install -y ansible",    # Install Ansible
-            "sudo apt install -y nvidia-driver-525",  # Install Nvidia Driver 525
+            "sudo apt install -y nvidia-driver-535",  # Install Nvidia Driver 525
             "wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin",
             "sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600",
             "wget https://developer.download.nvidia.com/compute/cuda/12.0.0/local_installers/cuda-repo-ubuntu2204-12-0-local_12.0.0-525.60.13-1_amd64.deb",
